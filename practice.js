@@ -77,4 +77,133 @@ console.log(typeof newVariable); // string
 newVariable = 1;
 console.log(typeof newVariable); // number 
 
+/* conditional statements */
+if (true) {
+  console.log('This message will print!'); 
+}
+if (false) {
+  console.log('The code in this block will not run.');
+} else {
+  console.log('But the code in this block will!');
+}
 
+/* Logical Operators */
+let mood = 'sleepy';
+let tirednessLevel = 6;
+if ( mood ==='sleepy' && tirednessLevel>8) {
+  console.log('time to sleep');
+} else {
+  console.log('not bed time yet');
+}
+
+/* Truthy and Falsy - check a variable has be given a value */
+let numberOfApples = 0;
+if (numberOfApples){
+   console.log('Let us eat apples!');
+} else {
+   console.log('No apples left!'); // outputs this 
+}
+let wordCount = 10;
+if (wordCount) {
+  console.log("Great! You've started your work!");
+} else {
+  console.log('Better get to work!');
+}
+let favoritePhrase = '';
+if (favoritePhrase) {
+  console.log("This string doesn't seem to be empty.");
+} else {
+  console.log('This string is definitely empty.');
+}
+
+/* Short circuit evaluation */
+let tool = 'marker';
+// Use short circuit evaluation to assign  writingUtensil variable below:
+let writingUtensil = tool || 'pen';
+console.log(`The ${writingUtensil} is mightier than the sword.`);
+
+/* Ternary operators */
+let isNightTime = true;
+if (isNightTime) {
+  console.log('Turn on the lights!');
+} else {
+  console.log('Turn off the lights!');
+}
+// same as 
+isNightTime ? console.log('Turn on the lights!') : console.log('Turn off the lights!');
+let favoritePhrase = 'Love That!';
+favoritePhrase === 'Love That!'?console.log('I love that!'):console.log("I don't love that!");
+
+/* Elseif */
+let stopLight = 'yellow';
+if (stopLight === 'red') {
+  console.log('Stop!');
+} else if (stopLight === 'yellow') {
+  console.log('Slow down.');
+} else if (stopLight === 'green') {
+  console.log('Go!');
+} else {
+  console.log('Caution, unknown!');
+}
+let season = 'summer';
+if (season === 'spring') {
+  console.log('It\'s spring! The trees are budding!');
+} else if (season === 'winter') {
+  console.log('It\'s winter! Everything is covered in snow.');
+} else if (season === 'fall'){
+  console.log('It\'s fall! Leaves are falling!');
+} else if (season === 'summer'){
+  console.log('It\'s sunny and warm because it\'s summer!');
+} else {
+  console.log('Invalid season.');
+}
+
+/* switch case */
+let athleteFinalPosition = 'first place';
+switch (athleteFinalPosition){
+  case 'first place':
+    console.log('You get the gold medal!');
+    break;
+  case 'second place':
+    console.log('You get the silver medal!');
+    break;
+  case 'third place':
+    console.log('You get the bronze medal!');
+    break;
+  default:
+   console.log('No medal awarded.');
+    break;
+}
+
+/* Fucntions */
+function greetWorld() {
+  console.log('Hello, World!');
+}
+function getReminder(){
+  console.log('Water the plants.');
+}
+function greetInSpanish(){
+  console.log('Buenas Tardes');
+}
+function sayThanks(name) {
+  console.log('Thank you for your purchase ' + name + '! We appreciate your business.');
+}
+function greeting (name = 'stranger') {
+  console.log(`Hello, ${name}!`)
+}
+function makeShoppingList(item1 = 'milk', item2 = 'bread', item3 = 'eggs'){
+  console.log(`Remember to buy ${item1}`);
+  console.log(`Remember to buy ${item2}`);
+  console.log(`Remember to buy ${item3}`);
+}
+function monitorCount(rows,columns){
+  return rows*columns;
+}
+greetWorld(); // Output: Hello, World!
+getReminder();
+greetInSpanish();
+sayThanks('Cole'); 
+greeting('Nick') // Output: Hello, Nick!
+greeting() // Output: Hello, stranger!
+const numOfMonitors = monitorCount(5,4);
+console.log(numOfMonitors);
