@@ -81,3 +81,20 @@ console.log(nestedArr[1][0]); // Output: 2
 const numberClusters = [[1,2],[3,4],[5,6]];
 const target = numberClusters[2][1];
 console.log(target); // prints 6
+
+/* for loop to loop through array */
+const animals = ['Grizzly Bear', 'Sloth', 'Sea Lion'];
+for (let i = 0; i < animals.length; i++){
+  console.log(animals[i]);
+}
+
+/* Nested Loops */
+const myArray = [6, 19, 20];
+const yourArray = [19, 81, 2];
+for (let i = 0; i < myArray.length; i++) {
+  for (let j = 0; j < yourArray.length; j++) {
+    if (myArray[i] === yourArray[j]) {
+      console.log('Both loops have the number: ' + yourArray[j])
+    }
+  }
+};
