@@ -131,7 +131,7 @@ if (isNightTime) {
 }
 // same as 
 isNightTime ? console.log('Turn on the lights!') : console.log('Turn off the lights!');
-let favoritePhrase = 'Love That!';
+favoritePhrase = 'Love That!';
 favoritePhrase === 'Love That!'?console.log('I love that!'):console.log("I don't love that!");
 
 /* Elseif */
@@ -174,36 +174,3 @@ switch (athleteFinalPosition){
    console.log('No medal awarded.');
     break;
 }
-
-/* Fucntions */
-function greetWorld() {
-  console.log('Hello, World!');
-}
-function getReminder(){
-  console.log('Water the plants.');
-}
-function greetInSpanish(){
-  console.log('Buenas Tardes');
-}
-function sayThanks(name) {
-  console.log('Thank you for your purchase ' + name + '! We appreciate your business.');
-}
-function greeting (name = 'stranger') {
-  console.log(`Hello, ${name}!`)
-}
-function makeShoppingList(item1 = 'milk', item2 = 'bread', item3 = 'eggs'){
-  console.log(`Remember to buy ${item1}`);
-  console.log(`Remember to buy ${item2}`);
-  console.log(`Remember to buy ${item3}`);
-}
-function monitorCount(rows,columns){
-  return rows*columns;
-}
-greetWorld(); // Output: Hello, World!
-getReminder();
-greetInSpanish();
-sayThanks('Cole'); 
-greeting('Nick') // Output: Hello, Nick!
-greeting() // Output: Hello, stranger!
-const numOfMonitors = monitorCount(5,4);
-console.log(numOfMonitors);
